@@ -82,12 +82,14 @@ The rootiest fish configuration you will ever see!
 Nerd Font glyphs are ***required***.
 Please use a terminal and font that provide them.
 
-If you chose not to install `lsd'
+If you chose not to install `lsd` please
 execute the following to remove the associated aliases:
 
-      ```bash
+   ```bash
       sh ~/.config/fish/rm-lsd-alias.sh
-      ```
+   ```
+
+Failing to do so will cause the `ls` command to malfunction.
 
 ## Features
 
