@@ -12,3 +12,6 @@ abbr -a hg kitten hyperlinked_grep
 abbr -a icat kitten icat
 abbr -a lg lazygit
 abbr -a sudu sudo -s
+abbr -a kt kitty
+abbr -a c cat
+abbr -a cm chezmoi
