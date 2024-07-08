@@ -47,6 +47,9 @@ set -g theme_project_dir_length 1
 set -g theme_newline_cursor no
 set -U grc_plugin_ignore_execs ls
 
+## VI keybindings ###
+set -g fish_key_bindings fish_vi_key_bindings
+
 ### Default Editors ###
 set -gx EDITOR nvim
 set -gx VISUAL nvim
