@@ -51,11 +51,23 @@ set -U grc_plugin_ignore_execs ls
 set -g fish_key_bindings fish_vi_key_bindings
 
 ### Default Editors ###
-set -gx EDITOR nvim
-set -gx VISUAL nvim
+set -gx EDITOR nvim # Neovim
+set -gx VISUAL nvim # Neovim
+
+### Alternative Editors ###
+#set -gx VISUAL code  # VSCode
 
 ### VI Key Bindings ###
 fish_vi_key_bindings
+### VI Cursor ###
+set -g fish_cursor_default block
+set -g fish_cursor_insert line
+set -g fish_cursor_replace_one underscore
+set -g fish_cursor_replace underscore
+set -g fish_cursor_external line
+set -g fish_cursor_visual block
+### VI Selection Mode ###
+set -g fish_cursor_selection_mode inclusive
 
 ### TMUX ###
 # /usr/bin/tmux
@@ -68,3 +80,4 @@ set PATH $PATH $HOME/.local/share/gem/ruby/3.0.0/bin
 
 ### Source user secrets ###
 source $HOME/.config/.user-dots/fish/secrets.fish
+
