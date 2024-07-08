@@ -61,3 +61,7 @@ set -Ux fish_tmux_config $HOME/.config/tmux/tmux.conf
 
 # Local PATHs
 set PATH $PATH $HOME/.local/bin
+set PATH $PATH $HOME/.local/share/gem/ruby/3.0.0/bin
+
+### Source user secrets ###
+source $HOME/.config/.user-dots/fish/secrets.fish
