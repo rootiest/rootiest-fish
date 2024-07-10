@@ -15,3 +15,5 @@ abbr -a sudu sudo -s
 abbr -a kt kitty
 abbr -a c cat
 abbr -a cm chezmoi
+abbr -a cmcz chezmoi cd
+abbr -a g git
