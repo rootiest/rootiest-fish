@@ -19,3 +19,5 @@ abbr -a cz chezmoi
 abbr -a cmcd chezmoi cd
 abbr -a czcd chezmoi cd
 abbr -a g git
+abbr -a e edit
+abbr -a se sudoedit
