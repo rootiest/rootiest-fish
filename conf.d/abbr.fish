@@ -21,3 +21,4 @@ abbr -a czcd chezmoi cd
 abbr -a g git
 abbr -a e edit
 abbr -a se sudoedit
+abbr -a :q exit
