@@ -108,11 +108,18 @@ Please use a terminal and font that provide them.
 
 ## Companion Tools
 
-[Rootiest Kitty Conf](https://github.com/rootiest/rootiest-kitty) - A kitty configuration that is designed to work with this neovim configuration
+[Rootiest Kitty Conf](https://github.com/rootiest/rootiest-kitty) -
+A kitty configuration that is designed to work with this fish config.
 
-[Rootiest Neovim](https://github.com/rootiest/rootiest-nvim) - A neovim config built to work alongside this and the kitty config.
+[Rootiest Neovim](https://github.com/rootiest/rootiest-nvim) -
+A NeoVim config built to work alongside this and the kitty config.
 
-[Nerd Fonts](https://github.com/ryanoasis/nerd-fonts/) - A collection of fonts that include many icons and glyphs that are used in this configuration. The default font is Monaspace Krypton and kitty uses the Symbols Only Nerd Font.
+[Nerd Fonts](https://github.com/ryanoasis/nerd-fonts/) -
+A collection of fonts that include many icons and glyphs that are used in this configuration.
+
+## Dotfiles
+
+[Rootiest Dotfiles](https://github.com/rootiest/dotfiles)
 
 ## Credits
 
