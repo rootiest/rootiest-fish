@@ -2,7 +2,9 @@
 
 # Neovim
 abbr -a n nvim
+abbr -a nv nvim
 abbr -a neovim nvim
+abbr -a cdnv cd ~/.config/nvim
 # VSCode
 abbr -a v code
 # Kate
