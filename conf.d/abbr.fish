@@ -35,6 +35,8 @@ abbr -a cz chezmoi
 # chezmoi cd
 abbr -a cmcd chezmoi cd
 abbr -a czcd chezmoi cd
+abbr -a cdcm chezmoi cd
+abbr -a cdcz chezmoi cd
 # chezmoi edit
 abbr -a cme chezmoi edit
 abbr -a cze chezmoi edit
