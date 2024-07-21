@@ -67,14 +67,19 @@ abbr -a :Q kitten @ close-tab
 abbr -a :w kitten @ new-window
 abbr -a :wv kitten @ launch --location=vsplit
 abbr -a :wh kitten @ launch --location=hsplit
-#Window Detatch
+#Window Detach
 abbr -a :wo kitten @ detach-window
 abbr -a :wot kitten @ detach-window --target=tab
-# Tab Management
+# Tab Creation
 abbr -a :t kitten @ launch --type=tab
 abbr -a :tt kitten @ launch --type=tab --title
+# Tab Detach
 abbr -a :to kitten @ detach-tab
-abbr -a :tl kitten @ action set_tab_title
+# Tab Label and Color
+abbr -a :tl kitten @ set-tab-title
+abbr -a :t! kitten @ set-tab-color active_bg=#E78284 inactive_bg=#614243
+abbr -a :t? kitten @ set-tab-color active_bg=#A6D189 inactive_bg=#47593a
+abbr -a :t~ kitten @ set-tab-color active_bg=#E5C890 inactive_bg=#66593f
 # Tab Navigation
 abbr -a :tp kitten @ action goto_tab 0
 abbr -a :tn kitten @ action goto_tab 1
