@@ -16,7 +16,7 @@ abbr -a d kitten diff
 abbr -a kdiff kitten diff
 abbr -a diff kitty +kitten diff
 # Neovim in a new tab
-abbr -a editt kitty @ launch --type=tab nvim
+abbr -a editt kitten @ launch --type=tab nvim
 # Kitty Kitten hyperlinked grep
 abbr -a hg kitten hyperlinked_grep
 # Kitty Kitten icat
@@ -61,18 +61,20 @@ abbr -a se sudoedit
 # Git
 abbr -a g git
 # Quit
-abbr -a :q kitty @ close-window
-abbr -a :Q kitty @ close-tab
+abbr -a :q kitten @ close-window
+abbr -a :Q kitten @ close-tab
 # Window Creation
-abbr -a :w kitty @ new-window
-abbr -a :wv kitty @ launch --location=vsplit
-abbr -a :wh kitty @ launch --location=hsplit
+abbr -a :w kitten @ new-window
+abbr -a :wv kitten @ launch --location=vsplit
+abbr -a :wh kitten @ launch --location=hsplit
 #Window Detatch
-abbr -a :wo kitty @ detach-window
-abbr -a :wot kitty @ detach-window --target=tab
+abbr -a :wo kitten @ detach-window
+abbr -a :wot kitten @ detach-window --target=tab
 # Tab Management
-abbr -a :t kitty @ launch type=tab
-abbr -a :to kitty @ detach-tab
+abbr -a :t kitten @ launch --type=tab
+abbr -a :tt kitten @ launch --type=tab --title
+abbr -a :to kitten @ detach-tab
+abbr -a :tl kitten @ action set_tab_title
 # Tab Navigation
-abbr -a :tp kitty @ action goto_tab 0
-abbr -a :tn kitty @ action goto_tab 1
+abbr -a :tp kitten @ action goto_tab 0
+abbr -a :tn kitten @ action goto_tab 1
