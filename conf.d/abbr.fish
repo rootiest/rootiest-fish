@@ -125,3 +125,11 @@ abbr -a :whgcz kitten @ launch --type=window --locationh=split --title=chezmoi ~
 abbr -a :whgcm kitten @ launch --type=window --location=hsplit --title=chezmoi ~/.config/chezmoi
 abbr -a :whgp kitten @ launch --type=window --location=hsplit --title=projects ~/Projects
 abbr -a :whgr kitten @ launch --type=window --location=hsplit --color background=#54393A --title=root sudo -i
+# Specialty cd Shortcuts
+abbr -a :cdk cd ~/.config/kitty
+abbr -a :cdn cd ~/.config/nvim
+abbr -a :cdf cd ~/.config/fish
+abbr -a :cdh cd ~
+abbr -a :cdcz cd ~/.local/share/chezmoi
+abbr -a :cdcm cd ~/.config/chezmoi
+abbr -a :cdp cd ~/Projects
