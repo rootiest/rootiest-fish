@@ -60,14 +60,14 @@ set -gx VISUAL nvim # Neovim
 ### VI Key Bindings ###
 fish_vi_key_bindings
 ### VI Cursor ###
-set -g fish_cursor_default block
-set -g fish_cursor_insert line
-set -g fish_cursor_replace_one underscore
-set -g fish_cursor_replace underscore
-set -g fish_cursor_external line
-set -g fish_cursor_visual block
+set fish_cursor_default block
+set fish_cursor_insert line
+set fish_cursor_replace_one underscore
+set fish_cursor_replace underscore
+set fish_cursor_external line
+set fish_cursor_visual block
 ### VI Selection Mode ###
-set -g fish_cursor_selection_mode inclusive
+set fish_cursor_selection_mode inclusive
 
 ### TMUX ###
 # /usr/bin/tmux
@@ -80,4 +80,3 @@ set PATH $PATH $HOME/.local/share/gem/ruby/3.0.0/bin
 
 ### Source user secrets ###
 source $HOME/.config/.user-dots/fish/secrets.fish
-
