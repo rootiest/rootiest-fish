@@ -51,4 +51,5 @@ SETUVAR fish_pager_color_selected_completion:\x1d
 SETUVAR fish_pager_color_selected_description:\x1d
 SETUVAR fish_pager_color_selected_prefix:\x1d
 SETUVAR --export fish_tmux_config:/home/rootiest/\x2econfig/tmux/tmux\x2econf
+SETUVAR fish_user_paths:/home/rootiest/\x2elocal/bin\x1e/home/rootiest/\x2elocal/share/gem/ruby/3\x2e0\x2e0/bin
 SETUVAR grc_plugin_ignore_execs:ls
