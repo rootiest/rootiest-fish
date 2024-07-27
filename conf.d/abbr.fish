@@ -31,7 +31,6 @@ abbr -a kt kitty
 abbr -a c cat
 # chezmoi
 abbr -a cm chezmoi
-abbr -a cz chezmoi
 # chezmoi cd
 abbr -a cmcd chezmoi cd
 abbr -a czcd chezmoi cd
