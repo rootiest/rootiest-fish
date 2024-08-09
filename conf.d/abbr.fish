@@ -132,3 +132,6 @@ abbr -a :cdh cd ~
 abbr -a :cdcz cd ~/.local/share/chezmoi
 abbr -a :cdcm cd ~/.config/chezmoi
 abbr -a :cdp cd ~/Projects
+
+# Spawn window
+abbr -a :sw spwin
