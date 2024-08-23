@@ -49,6 +49,7 @@ set -U grc_plugin_ignore_execs ls
 
 ## VI keybindings ###
 set -g fish_key_bindings fish_vi_key_bindings
+set fish_vi_force_cursor 1
 
 ### Default Editors ###
 set -gx EDITOR nvim # Neovim
