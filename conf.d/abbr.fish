@@ -9,18 +9,10 @@ abbr -a cdnv cd ~/.config/nvim
 abbr -a v code
 # Kate
 abbr -a k kate
-# Kitty Kitten SSH
-abbr -a s kitten ssh
-# Kitty Kitten Diff
-abbr -a d kitten diff
-abbr -a kdiff kitten diff
-abbr -a diff kitty +kitten diff
+# WezTerm SSH
+abbr -a s wezterm ssh
 # Neovim in a new tab
-abbr -a editt kitten @ launch --type=tab nvim
-# Kitty Kitten hyperlinked grep
-abbr -a hg kitten hyperlinked_grep
-# Kitty Kitten icat
-abbr -a icat kitten icat
+abbr -a editt wezterm cli spawn nvim
 # LazyGit
 abbr -a lg lazygit
 # Sudo shell
@@ -60,70 +52,62 @@ abbr -a se sudoedit
 # Git
 abbr -a g git
 # Quit
-abbr -a :q kitten @ close-window
-abbr -a :Q kitten @ close-tab
+abbr -a :q wezterm cli kill-pane
+abbr -a :Q wezterm cli kill-pane
 # Window Creation
-abbr -a :w kitten @ new-window
-abbr -a :wv kitten @ launch --location=vsplit
-abbr -a :wh kitten @ launch --location=hsplit
+abbr -a :w wezterm cli spawn --new-window
+abbr -a :wv wezterm cli split-pane --bottom
+abbr -a :wh wezterm cli split-pane --right
 #Window Detach
-abbr -a :wo kitten @ detach-window
-abbr -a :wot kitten @ detach-window --target=tab
+abbr -a :wo wezterm cli move-pane-to-new-tab --new-window
+abbr -a :wot wezterm cli move-pane-to-new-tab
 # Tab Creation
-abbr -a :t kitten @ launch --type=tab
-abbr -a :tt kitten @ launch --type=tab --title
-# Tab Detach
-abbr -a :to kitten @ detach-tab
-# Tab Label and Color
-abbr -a :tl kitten @ set-tab-title
-abbr -a :t! kitten @ set-tab-color active_bg=#E78284 inactive_bg=#614243
-abbr -a :tce kitten @ set-tab-color active_bg=#E78284 inactive_bg=#614243
-abbr -a :tcr kitten @ set-tab-color active_bg=#E78284 inactive_bg=#614243
-abbr -a :tcs kitten @ set-tab-color active_bg=#A6D189 inactive_bg=#47593A
-abbr -a :tcg kitten @ set-tab-color active_bg=#A6D189 inactive_bg=#47593A
-abbr -a :tcw kitten @ set-tab-color active_bg=#E5C890 inactive_bg=#66593F
-abbr -a :tcy kitten @ set-tab-color active_bg=#E5C890 inactive_bg=#66593F
-abbr -a :tcb kitten @ set-tab-color active_bg=#8AA8F2 inactive_bg=#3C4B72
-abbr -a :tcn kitten @ set-tab-color active_fg=none active_bg=none inactive_fg=none inactive_bg=none
+abbr -a :t wezterm cli spawn
+# Rename Tab
+abbr -a :tl wezterm cli set-tab-title
+# Rename Window
+abbr -a :tw wezterm cli set-window-title
+# Rename Workspace
+abbr -a :twk wezterm cli rename-workspace
 # Tab Navigation
-abbr -a :tp kitten @ action goto_tab 0
-abbr -a :tn kitten @ action goto_tab 1
+abbr -a :tp wezterm cli activate-tab --tab-relative -1
+abbr -a :tn wezterm cli activate-tab --tab-relative 1
 # Specialty Tab Shortcuts
-abbr -a :tgk kitten @ launch --type=tab --title=kitty ~/.config/kitty
-abbr -a :tgn kitten @ launch --type=tab --title=nvim ~/.config/nvim
-abbr -a :tgf kitten @ launch --type=tab --title=fish ~/.config/fish
-abbr -a :tgh kitten @ launch --type=tab --title=home ~
-abbr -a :tgcz kitten @ launch --type=tab --title=chezmoi ~/.local/share/chezmoi
-abbr -a :tgcm kitten @ launch --type=tab --title=chezmoi ~/.config/chezmoi
-abbr -a :tgp kitten @ launch --type=tab --title=projects ~/Projects
-abbr -a :tgr kitten @ launch --color background=#54393A --type=tab --title=root sudo -i
+abbr -a :tgk wezterm cli spawn --cwd ~/.config/kitty
+abbr -a :tgn wezterm cli spawn --cwd ~/.config/nvim
+abbr -a :tgf wezterm cli spawn --cwd ~/.config/fish
+abbr -a :tgh wezterm cli spawn --cwd ~
+abbr -a :tgcz wezterm cli spawn --cwd ~/.local/share/chezmoi
+abbr -a :tgcm wezterm cli spawn --cwd ~/.config/chezmoi
+abbr -a :tgp wezterm cli spawn --cwd ~/Projects
+abbr -a :tgr wezterm cli spawn -- sudo -i
 # Specialty Window Shortcuts
-abbr -a :wgk kitten @ launch --type=window --location=split --title=kitty ~/.config/kitty
-abbr -a :wgn kitten @ launch --type=window --location=split --title=nvim ~/.config/nvim
-abbr -a :wgf kitten @ launch --type=window --location=split --title=fish ~/.config/fish
-abbr -a :wgh kitten @ launch --type=window --location=split --title=home ~
-abbr -a :wgcz kitten @ launch --type=window --location=split --title=chezmoi ~/.local/share/chezmoi
-abbr -a :wgcm kitten @ launch --type=window --location=split --title=chezmoi ~/.config/chezmoi
-abbr -a :wgp kitten @ launch --type=window --location=split --title=projects ~/Projects
-abbr -a :wgr kitten @ launch --type=window --location=split --color background=#54393A --title=root sudo -i
+abbr -a :wgk wezterm cli spawn --new-window --cwd ~/.config/kitty
+abbr -a :wgn wezterm cli spawn --new-window --cwd ~/.config/nvim
+abbr -a :wgf wezterm cli spawn --new-window --cwd ~/.config/fish
+abbr -a :wgh wezterm cli spawn --new-window --cwd ~
+abbr -a wezterm cli spawn --new-window --cwd ~/.local/share/chezmoi
+abbr -a wezterm cli spawn --new-window --cwd ~/.config/chezmoi
+abbr -a wezterm cli spawn --new-window --cwd ~/Projects
+abbr -a :wgr wezterm cli spawn --new-window -- sudo -i
 # Specialty Window Vertical Shortcuts
-abbr -a :wvgk kitten @ launch --type=window --location=vsplit --title=kitty ~/.config/kitty
-abbr -a :wvgn kitten @ launch --type=window --location=vsplit --title=nvim ~/.config/nvim
-abbr -a :wvgf kitten @ launch --type=window --location=vsplit --title=fish ~/.config/fish
-abbr -a :wvgh kitten @ launch --type=window --location=vsplit --title=home ~
-abbr -a :wvgcz kitten @ launch --type=window --location=vsplit --title=chezmoi ~/.local/share/chezmoi
-abbr -a :wvgcm kitten @ launch --type=window --location=vsplit --title=chezmoi ~/.config/chezmoi
-abbr -a :wvgp kitten @ launch --type=window --location=vsplit --title=projects ~/Projects
-abbr -a :wvgr kitten @ launch --type=window --location=vsplit --color background=#54393A --title=root sudo -i
+abbr -a :wvgk wezterm cli split-pane --bottom --cwd ~/.config/kitty
+abbr -a :wvgn wezterm cli split-pane --bottom --cwd ~/.config/nvim
+abbr -a :wvgf wezterm cli split-pane --bottom --cwd ~/.config/fish
+abbr -a :wvgh wezterm cli split-pane --bottom --cwd ~
+abbr -a :wvgcz wezterm cli split-pane --bottom --cwd ~/.local/share/chezmoi
+abbr -a :wvgcm wezterm cli split-pane --bottom --cwd ~/.config/chezmoi
+abbr -a :wvgp wezterm cli split-pane --bottom --cwd ~/Projects
+abbr -a :wvgr wezterm cli split-pane --bottom -- sudo -i
 # Specialty Window Horizontal Shortcuts
-abbr -a :whgk kitten @ launch --type=window --location=hsplit --title=kitty ~/.config/kitty
-abbr -a :whgn kitten @ launch --type=window --location=hsplit --title=nvim ~/.config/nvim
-abbr -a :whgf kitten @ launch --type=window --location=hsplit --title=fish ~/.config/fish
-abbr -a :whgh kitten @ launch --type=window --location=hsplit --title=home ~
-abbr -a :whgcz kitten @ launch --type=window --locationh=split --title=chezmoi ~/.local/share/chezmoi
-abbr -a :whgcm kitten @ launch --type=window --location=hsplit --title=chezmoi ~/.config/chezmoi
-abbr -a :whgp kitten @ launch --type=window --location=hsplit --title=projects ~/Projects
-abbr -a :whgr kitten @ launch --type=window --location=hsplit --color background=#54393A --title=root sudo -i
+abbr -a :whgk wezterm cli split-pane --bottom --cwd ~/.config/kitty
+abbr -a :whgn wezterm cli split-pane --bottom --cwd ~/.config/nvim
+abbr -a :whgf wezterm cli split-pane --bottom --cwd ~/.config/fish
+abbr -a :whgh wezterm cli split-pane --bottom --cwd ~
+abbr -a :whgcz wezterm cli split-pane --bottom --cwd ~/.local/share/chezmoi
+abbr -a :whgcm wezterm cli split-pane --bottom --cwd ~/.config/chezmoi
+abbr -a :whgp wezterm cli split-pane --bottom --cwd ~/Projects
+abbr -a :whgr wezterm cli split-pane --bottom -- sudo -i
 # Specialty cd Shortcuts
 abbr -a :cdk cd ~/.config/kitty
 abbr -a :cdn cd ~/.config/nvim

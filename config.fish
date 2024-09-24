@@ -47,13 +47,58 @@ set -g theme_project_dir_length 1
 set -g theme_newline_cursor no
 set -U grc_plugin_ignore_execs ls
 
+### Greeting ###
+function fish_greeting
+    # Color variables using hex values or termcolors
+    set border_color 8FDB93 brgreen # Light green
+    set text_color F77EA3 brred # Pink
+
+    # Set the greeting text
+    set greet_text "Welcome to "$hostname
+    set len (string length $greet_text) # Get the length of the hostname
+
+    # Create the border line with proper spacing
+    set border_length (math "$len + 20") # Adjust as needed (even numbers only)
+    set top_border (printf '╭%s╮\n' (string repeat '─' --count $border_length))
+    set bot_border (printf '╰%s╯\n' (string repeat '─' --count $border_length))
+
+    # Calculate the number of spaces needed for border padding
+    set padding_length (math "(($border_length - $len - 2) / 2)")
+    set padding (string repeat ' ' --count $padding_length)
+
+    # Calculate the number of spaces needed for center padding
+    set cpadlen (math "(($border_length - $len - 8) / 2)")
+    set cpad (string repeat ' ' --count $cpadlen)
+
+    # Print the greeting with aligned borders and colors
+    echo -n (set_color $border_color)
+    echo $top_border
+    echo -n "│$cpad "
+    echo -n (set_color $text_color)
+    echo -n "  $greet_text  $cpad"
+    echo -n (set_color $border_color)
+    echo " │" # Close the border character on the same line
+    echo $bot_border
+    echo -n (set_color normal) # Reset color to default
+end
+
 ## VI keybindings ###
 set -g fish_key_bindings fish_vi_key_bindings
 set fish_vi_force_cursor 1
 
 ### Default Editors ###
-set -gx EDITOR nvim # Neovim
-set -gx VISUAL nvim # Neovim
+#set -gx EDITOR nvim # Neovim
+#set -gx VISUAL nvim # Neovim
+
+### Dynamic Editors ###
+if test -n "$NVIM_LISTEN_ADDRESS"
+    alias nvim="nvr -cc split --remote-wait +'set bufhidden=wipe'"
+    set -x VISUAL "nvr -cc split --remote-wait +'set bufhidden=wipe'"
+    set -x EDITOR "nvr -cc split --remote-wait +'set bufhidden=wipe'"
+else
+    set -x VISUAL nvim
+    set -x EDITOR nvim
+end
 
 ### Alternative Editors ###
 #set -gx VISUAL code  # VSCode
