@@ -120,9 +120,5 @@ set fish_cursor_selection_mode inclusive
 set TMUX
 set -Ux fish_tmux_config $HOME/.config/tmux/tmux.conf
 
-# Local PATHs
-fish_add_path -a $HOME/.local/bin
-fish_add_path -a $HOME/.local/share/gem/ruby/3.0.0/bin
-
 ### Source user secrets ###
 source $HOME/.config/.user-dots/fish/secrets.fish
