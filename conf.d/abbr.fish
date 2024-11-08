@@ -5,6 +5,7 @@ abbr -a n nvim
 abbr -a nv nvim
 abbr -a neovim nvim
 abbr -a cdnv cd ~/.config/nvim
+abbr -a cdnvn 'cd ~/.config/nvim;nvim'
 # VSCode
 abbr -a v code
 # Kate
@@ -79,16 +80,16 @@ abbr -a :tgf wezterm cli spawn --cwd ~/.config/fish
 abbr -a :tgh wezterm cli spawn --cwd ~
 abbr -a :tgcz wezterm cli spawn --cwd ~/.local/share/chezmoi
 abbr -a :tgcm wezterm cli spawn --cwd ~/.config/chezmoi
-abbr -a :tgp wezterm cli spawn --cwd ~/Projects
+abbr -a :tgp wezterm cli spawn --cwd ~/projects
 abbr -a :tgr wezterm cli spawn -- sudo -i
 # Specialty Window Shortcuts
 abbr -a :wgk wezterm cli spawn --new-window --cwd ~/.config/kitty
 abbr -a :wgn wezterm cli spawn --new-window --cwd ~/.config/nvim
 abbr -a :wgf wezterm cli spawn --new-window --cwd ~/.config/fish
 abbr -a :wgh wezterm cli spawn --new-window --cwd ~
-abbr -a wezterm cli spawn --new-window --cwd ~/.local/share/chezmoi
-abbr -a wezterm cli spawn --new-window --cwd ~/.config/chezmoi
-abbr -a wezterm cli spawn --new-window --cwd ~/Projects
+abbr -a :wgzd wezterm cli spawn --new-window --cwd ~/.local/share/chezmoi
+abbr -a :wgcz wezterm cli spawn --new-window --cwd ~/.config/chezmoi
+abbr -a :wgp wezterm cli spawn --new-window --cwd ~/projects
 abbr -a :wgr wezterm cli spawn --new-window -- sudo -i
 # Specialty Window Vertical Shortcuts
 abbr -a :wvgk wezterm cli split-pane --bottom --cwd ~/.config/kitty
@@ -97,7 +98,7 @@ abbr -a :wvgf wezterm cli split-pane --bottom --cwd ~/.config/fish
 abbr -a :wvgh wezterm cli split-pane --bottom --cwd ~
 abbr -a :wvgcz wezterm cli split-pane --bottom --cwd ~/.local/share/chezmoi
 abbr -a :wvgcm wezterm cli split-pane --bottom --cwd ~/.config/chezmoi
-abbr -a :wvgp wezterm cli split-pane --bottom --cwd ~/Projects
+abbr -a :wvgp wezterm cli split-pane --bottom --cwd ~/projects
 abbr -a :wvgr wezterm cli split-pane --bottom -- sudo -i
 # Specialty Window Horizontal Shortcuts
 abbr -a :whgk wezterm cli split-pane --bottom --cwd ~/.config/kitty
@@ -106,17 +107,25 @@ abbr -a :whgf wezterm cli split-pane --bottom --cwd ~/.config/fish
 abbr -a :whgh wezterm cli split-pane --bottom --cwd ~
 abbr -a :whgcz wezterm cli split-pane --bottom --cwd ~/.local/share/chezmoi
 abbr -a :whgcm wezterm cli split-pane --bottom --cwd ~/.config/chezmoi
-abbr -a :whgp wezterm cli split-pane --bottom --cwd ~/Projects
+abbr -a :whgp wezterm cli split-pane --bottom --cwd ~/projects
 abbr -a :whgr wezterm cli split-pane --bottom -- sudo -i
 # Specialty cd Shortcuts
 abbr -a :cdk cd ~/.config/kitty
+abbr -a :cdkn 'cd ~/.config/kitty;nvim'
 abbr -a :cdn cd ~/.config/nvim
+abbr -a :cdnn 'cd ~/.config/nvim;nvim'
 abbr -a :cdf cd ~/.config/fish
+abbr -a :cdfn 'cd ~/.config/fish;nvim'
 abbr -a :cdh cd ~
+abbr -a :cdhn 'cd ~;nvim'
 abbr -a :cdcz cd ~/.local/share/chezmoi
+abbr -a :cdczn 'cd ~/.local/share/chezmoi;nvim'
 abbr -a :cdcm cd ~/.config/chezmoi
-abbr -a :cdp cd ~/Projects
+abbr -a :cdcmn 'cd ~/.config/chezmoi;nvim'
+abbr -a :cdp cd ~/projects
+abbr -a :cdpn 'cd ~/projects;nvim'
 abbr -a :cdw cd ~/.config/wezterm
+abbr -a :cdwn 'cd ~/.config/wezterm;nvim'
 
 # Spawn window
 abbr -a :sw spwin
