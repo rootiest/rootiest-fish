@@ -4,16 +4,16 @@
  ██▀███   ▒█████   ▒█████  ▄▄▄█████▓ ██▓▓█████   ██████ ▄▄▄█████▓
 ▓██ ▒ ██▒▒██▒  ██▒▒██▒  ██▒▓  ██▒ ▓▒▓██▒▓█   ▀ ▒██    ▒ ▓  ██▒ ▓▒
 ▓██ ░▄█ ▒▒██░  ██▒▒██░  ██▒▒ ▓██░ ▒░▒██▒▒███   ░ ▓██▄   ▒ ▓██░ ▒░
-▒██▀▀█▄  ▒██   ██░▒██   ██░░ ▓██▓ ░ ░██░▒▓█  ▄   ▒   ██▒░ ▓██▓ ░ 
-░██▓ ▒██▒░ ████▓▒░░ ████▓▒░  ▒██▒ ░ ░██░░▒████▒▒██████▒▒  ▒██▒ ░ 
-░ ▒▓ ░▒▓░░ ▒░▒░▒░ ░ ▒░▒░▒░   ▒ ░░   ░▓  ░░ ▒░ ░▒ ▒▓▒ ▒ ░  ▒ ░░   
-  ░▒ ░ ▒░  ░ ▒ ▒░   ░ ▒ ▒░     ░     ▒ ░ ░ ░  ░░ ░▒  ░ ░    ░    
-  ░░   ░ ░ ░ ░ ▒  ░ ░ ░ ▒    ░       ▒ ░   ░   ░  ░  ░    ░      
-   ░         ░ ░      ░ ░            ░     ░  ░      ░           
-                  █████▒██▓  ██████  ██░ ██ 
+▒██▀▀█▄  ▒██   ██░▒██   ██░░ ▓██▓ ░ ░██░▒▓█  ▄   ▒   ██▒░ ▓██▓ ░
+░██▓ ▒██▒░ ████▓▒░░ ████▓▒░  ▒██▒ ░ ░██░░▒████▒▒██████▒▒  ▒██▒ ░
+░ ▒▓ ░▒▓░░ ▒░▒░▒░ ░ ▒░▒░▒░   ▒ ░░   ░▓  ░░ ▒░ ░▒ ▒▓▒ ▒ ░  ▒ ░░
+  ░▒ ░ ▒░  ░ ▒ ▒░   ░ ▒ ▒░     ░     ▒ ░ ░ ░  ░░ ░▒  ░ ░    ░
+  ░░   ░ ░ ░ ░ ▒  ░ ░ ░ ▒    ░       ▒ ░   ░   ░  ░  ░    ░
+   ░         ░ ░      ░ ░            ░     ░  ░      ░
+                  █████▒██▓  ██████  ██░ ██
                   ▓██   ▒▓██▒▒██    ▒ ▓██░ ██▒
                   ▒████ ░▒██▒░ ▓██▄   ▒██▀▀██░
-                  ░▓█▒  ░░██░  ▒   ██▒░▓█ ░██ 
+                  ░▓█▒  ░░██░  ▒   ██▒░▓█ ░██
                   ░▒█░   ░██░▒██████▒▒░▓█▒░██▓
                   ▒ ░   ░▓  ▒ ▒▓▒ ▒ ░ ▒ ░░▒░▒
                   ░      ▒ ░░ ░▒  ░ ░ ▒ ░▒░ ░
@@ -50,21 +50,21 @@ The rootiest fish configuration you will ever see!
 3. Install pre-requisites
 
    - Required
-      - [Nerd Fonts](https://github.com/ryanoasis/nerd-fonts/) -
-      You must use a terminal/font that provides these glyphs
+     - [Nerd Fonts](https://github.com/ryanoasis/nerd-fonts/) -
+       You must use a terminal/font that provides these glyphs
    - Optional
      - [lsd](https://github.com/lsd-rs/lsd) -
-        Enhanced ls functionality
+       Enhanced ls functionality
      - [kitty](https://sw.kovidgoyal.net/kitty/) -
-        A fast, featureful, GPU based terminal emulator
+       A fast, featureful, GPU based terminal emulator
      - [ripgrep](https://github.com/BurntSushi/ripgrep) -
-        A faster grep
+       A faster grep
      - [fzf](https://github.com/junegunn/fzf) -
-        A command-line fuzzy finder
+       A command-line fuzzy finder
      - [fd](https://github.com/sharkdp/fd) -
-        A simple, fast and user-friendly alternative to 'find'
+       A simple, fast and user-friendly alternative to 'find'
      - [lazygit](https://github.com/jesseduffield/lazygit) -
-        A simple terminal UI for git commands
+       A simple terminal UI for git commands
 
 4. Install Oh-my-fish
 
@@ -94,7 +94,7 @@ The rootiest fish configuration you will ever see!
 
 ## Notes
 
-Nerd Font glyphs are ***required***.
+Nerd Font glyphs are **_required_**.
 Please use a terminal and font that provide them.
 
 ## Features
@@ -108,11 +108,20 @@ Please use a terminal and font that provide them.
 
 ## Companion Tools
 
-[Rootiest Kitty Conf](https://github.com/rootiest/rootiest-kitty) -
+[Rootiest WezTerm](https://github.com/rootiest/rootiest-wezterm) -
+A wezterm configuration that is designed to work with this fish config.
+
+[Rootiest Kitty](https://github.com/rootiest/rootiest-kitty) -
 A kitty configuration that is designed to work with this fish config.
+
+[Rootiest Tmux](https://github.com/rootiest/rootiest-tmux) -
+A tmux configuration that is designed to work with this fish config.
 
 [Rootiest Neovim](https://github.com/rootiest/rootiest-nvim) -
 A NeoVim config built to work alongside this and the kitty config.
+
+[Rootiest Iosevka Font](https://github.com/rootiest/rootiest-iosevka) -
+A custom Iosevka font that is designed by developers, for developers.
 
 [Nerd Fonts](https://github.com/ryanoasis/nerd-fonts/) -
 A collection of fonts that include many icons and glyphs that are used in this configuration.
