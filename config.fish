@@ -103,6 +103,9 @@ end
 ### Alternative Editors ###
 #set -gx VISUAL code  # VSCode
 
+### The-fuck ###
+#thefuck --alias | source
+
 ### VI Key Bindings ###
 fish_vi_key_bindings
 ### VI Cursor ###
@@ -122,3 +125,8 @@ set -Ux fish_tmux_config $HOME/.config/tmux/tmux.conf
 
 ### Source user secrets ###
 source $HOME/.config/.user-dots/fish/secrets.fish
+
+### Enable LS colors ###
+if test -x /usr/share/LS_COLORS/dircolors.sh
+    eval "$(. /usr/share/LS_COLORS/dircolors.sh)"
+end
